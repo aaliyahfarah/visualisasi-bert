@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <ul class="nav">
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="visual.html" class="active">Visualization</a></li> 
+              </ul>        
+              <a class='menu-trigger'>
+                  <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+  
+    <div id="services" class="services section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+              <h6>Dynamic Topic Modeling</h6>
+              <h4>BERTopic <em>Visualization</em></h4>
+              <!-- <h4>Visualization BERtopic</h4> -->
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="naccs">
+              <div class="grid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu">
+                      <div class="first-thumb active">
+                        <div class="thumb">
+                          <span class="text"></span>
+                          K = 6
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="text"></span>
+                          K = 8
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="text"></span>
+                          K = 10
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="text"></span>
+                          K = 12
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-lg-12">
+                    <ul class="nacc">
+                      <li class="active">
+                        <div class="thumb">
+                          <iframe src="assets/graph/plotly_k_6.html" width="100%" height="500px" frameborder="0"></iframe>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="thumb">
+                          <iframe src="assets/graph/plotly_k_8.html" width="100%" height="500px" frameborder="0"></iframe>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="thumb">
+                          <iframe src="assets/graph/plotly_k_10.html" width="100%" height="500px" frameborder="0"></iframe>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="thumb">
+                          <iframe src="assets/graph/plotly_k_12.html" width="100%" height="500px" frameborder="0"></iframe>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>          
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <img src="assets/images/about-dec.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="about-right-content">
+                  <div class="section-heading">
+                    <h6>About The Models</h6>
+                    <h4>What is <em>BERTopic?</em></h4>
+                    <div class="line-dec"></div>
+                  </div>
+                  <p>We use custom <a href="https://maartengr.github.io/BERTopic/index.html">BERTopic</a> hyperparameter which is <a rel="nofollow" href="https://huggingface.co/firqaaa/indo-sentence-bert-base">indo-sentence-bert-base</a> 
+                    for the embeddings, <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">KMeans</a> for the clustering, and 
+                    KeyBERTInspired for the representatin model.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <p> This website is intended for the final project which is made as one of the graduation requirements to obtain a Bachelor of Informatics degree in the Bachelor of Science (S-1) program at the Faculty of Electrical Technology and Intelligent Informatics, Institut Teknologi Sepuluh Nopember.
+              <br> <a href="https://github.com/aaliyahfarah">- Aaliyah Farah Adibah, 2024 -</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>  
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/custom.js"></script>
+  
+  </body>
+</html>
